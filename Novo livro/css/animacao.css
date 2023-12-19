@@ -1,0 +1,44 @@
+@keyframes fadein {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.3;
+	}
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes vai-volta {
+	0%{
+		transform: scale(1.0);
+	}
+	50%{
+		transform: scale(1.3);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+
+}
+
+.texto-some {
+	animation: fadein 3s infinite;
+}
+
+.animacao-short{
+	animation: fadeout 3s;
+}
+.animacao-long{
+	animation: fadeout 5s;
+}

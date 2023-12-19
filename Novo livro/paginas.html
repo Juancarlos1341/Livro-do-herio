@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 1</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animacao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,900&family=Libre+Caslon+Display&family=Montserrat:wght@300;400;700&family=Nunito:wght@200;700&family=Open+Sans:wght@300;400;700&family=Roboto:ital,wght@1,500&family=Titillium+Web:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="fundo-dia" id="fundo">
+    <div class="paniel-menu" id="menu">
+        <h1>Menu de aparencia</h1>
+        <span data-tooltip="fundo de nuvens !">
+            <button onclick=mudarFundoDia() class="btn-opcao">Nuvens</button>
+        </span>
+        <span data-tooltip="fundo de estrelas !">
+            <button onclick=mudarFundoNoite() class="btn-opcao">Estrelas</button>
+        </span>
+        <span data-tooltip="Ativa modo escuro !">
+            <button onclick=ativarModoEscuro() class="btn-opcao">Escuro</button>
+        </span>
+        <span data-tooltip="Ativa modo claro !">
+            <button onclick=ativaModoClaro() class="btn-opcao">Claro</button>
+        </span>
+        <span data-tooltip="Ativa Animações e transições de uma pagina para outra !">
+             <button onclick="" class="btn-opcao">Ativar Animações</button>
+        </span>
+        <span data-tooltip="Desativa Animações e transições de uma pagina para outra !">
+            <button onclick="" class="btn-opcao">Desativar Animações</button>
+        </span>
+        <p id="informacao" class="informacao">
+            Fundo : Nuvens <br>
+            Animações : Ativado
+        </p>
+    </div>
+    <div class="conteudo" id="conteudo">
+
+        <img src="img/imagem exemplo.jpg" class="imagem-pagina">
+        <h1>Introdução da História</h1>
+        <p>
+            Essa é minha história, eu vivo em mundo em que algumas pessoas tem poderes por causas de tratamentos médicos,estes poderes vão deste de manipular o fogo, agua, terra até poderes mais complexos como se transformar em outros,\se esticar, voar, ler mentes e manipular outros entre outras coisas, este mundo está dividido pelos que tem poderese acham que eles deveriam dominar, os mais fracos, já tem os defensores ou heróis que acreditam que estes poderesdeveriam ser usados pelo bem de todos, eles defendem os daqueles que querem dominar e ajudam outros com suas habilidades,venha acompanhar minhas aventuras começando quando eu me transformei em um herói, esta minha história.
+        </p>
+        <img src="img/imagem exemplo.jpg" class="imagem-pagina">
+        <nav>
+            <ul class="nav-paginas">
+                <li class="bnt-paginas">
+                    <a>
+                        <img src="img/esquerdo.svg" class="icones" aling="middle">
+                        <h2>Pagina Anterior</h2>
+                    </a>
+                </li>
+                <li class="bnt-paginas">
+                    <a >
+                        <h2>Proxima Pagina</h2>
+                        <img src="img/direito.svg" class="icones">
+                    </a>
+            </ul>
+        </nav>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
