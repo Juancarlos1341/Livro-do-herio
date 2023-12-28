@@ -1,6 +1,7 @@
 const fundo = document.getElementById("fundo")
 const conteudo = document.getElementById("conteudo")
 const menu = document.getElementById("menu")
+const textoTrasicao = document.getElementById("texto-transicao")
 let ultimoFundo  = "fundo-dia"
 let isConteudoEscuro = false
 
@@ -51,4 +52,16 @@ function ativarModoEscuro() {
         conteudo.classList.add("escuro-texto")
     }
     ultimoFundo = "modo-escuro"
+}
+
+function mudarPagina() {
+    window.location.href= "paginas.html"
+}
+
+function esperarAnimacao(){
+    setTimeout(mudarPagina, 5000)
+}
+
+function voltaPaginaCapitulos(){
+    window.location.href = "index.html"
 }

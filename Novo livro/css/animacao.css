@@ -32,6 +32,78 @@
 
 }
 
+
+@keyframes transicao-1 {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translate3d(700px, 300px, 20px) rotate(180deg);
+	}
+	100% {
+		transform: translate3d(0px ,450px, 20px) rotate(360deg);
+	}
+
+}
+
+@keyframes transicao-2 {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translate3d(-700px, -300px, 20px) rotate(180deg);
+	}
+	100% {
+		transform: translate3d(0px ,-450px, 20px) rotate(360deg);
+	}
+
+}
+
+@keyframes transicao-fundo-dia-noite {
+	from {
+		background: url("../img/dia.jpeg") no-repeat center center;
+		background-size: cover;
+    	background-attachment: fixed;
+		color: black;
+	}
+	to {
+		background: url("../img/noite.jpeg") no-repeat center center;
+		background-size: cover;
+    	background-attachment: fixed;
+		color: white;
+	}
+
+}
+
+@keyframes transicao-fundo-noite-dia {
+	from {
+		background: url("../img/noite.jpeg") no-repeat center center;
+		background-size: cover;
+    	background-attachment: fixed;
+		color: white;
+	}
+	to {
+		background: url("../img/dia.jpeg") no-repeat center center;
+		background-size: cover;
+    	background-attachment: fixed;
+		color: black;
+	}
+
+}
+
+@keyframes center-right {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(50px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+	
+}
+
 .texto-some {
 	animation: fadein 3s infinite;
 }
